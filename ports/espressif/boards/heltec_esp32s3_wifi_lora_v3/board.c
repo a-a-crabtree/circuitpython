@@ -36,8 +36,8 @@ digitalio_digitalinout_obj_t display_on;
 static void display_init(void) {
     // Need to bring GPIO21 high or the screen doesn't get power
     // & the board can't see the i2c bus at all.
-    common_hal_digitalio_digitalinout_construct(&display_on, &pin_GPIO21);
-    common_hal_digitalio_digitalinout_switch_to_output(&display_on, true, DRIVE_MODE_PUSH_PULL);
+    common_hal_digitalio_digitalinout_construct(&display_on, &pin_GPIO36);
+    common_hal_digitalio_digitalinout_switch_to_output(&display_on, false, DRIVE_MODE_PUSH_PULL);
     common_hal_digitalio_digitalinout_never_reset(&display_on);
 
     busio_i2c_obj_t *i2c = common_hal_board_create_i2c(0);
