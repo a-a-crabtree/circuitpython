@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: circuitpython-cn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-04 12:55-0600\n"
-"PO-Revision-Date: 2025-04-25 15:04+0000\n"
+"PO-Revision-Date: 2025-05-31 20:05+0000\n"
 "Last-Translator: hexthat <hexthat@gmail.com>\n"
 "Language-Team: Chinese Hanyu Pinyin\n"
 "Language: zh_Latn_pinyin\n"
@@ -2116,7 +2116,7 @@ msgstr "Píng pū kuāndù bìxū huàfēn wèi tú kuāndù"
 
 #: shared-module/tilepalettemapper/TilePaletteMapper.c
 msgid "TilePaletteMapper may only be bound to a TileGrid once"
-msgstr ""
+msgstr "TilePaletteMapper zhǐnéng bǎngdìng dào yígè TileGrid shàngyícì"
 
 #: shared-bindings/alarm/time/TimeAlarm.c
 msgid "Time is in the past."
@@ -2411,7 +2411,7 @@ msgstr "Wi-Fi: "
 #: ports/raspberrypi/common-hal/wifi/Radio.c
 #: ports/zephyr-cp/common-hal/wifi/Radio.c
 msgid "WiFi is not enabled"
-msgstr ""
+msgstr "WiFi wèi qǐyòng"
 
 #: main.c
 msgid "Woken up by alarm.\n"

@@ -35,7 +35,7 @@ void common_hal_mcu_delay_us(uint32_t delay) {
 
 static volatile uint32_t nesting_count = 0;
 static uint8_t is_nested_critical_region;
-void common_hal_mcu_disable_interrupts() {
+void common_hal_mcu_disable_interrupts(void) {
     if (nesting_count == 0) {
         // Unlike __disable_irq(), this should only be called the first time
         // "is_nested_critical_region" is sd's equivalent of our nesting count
@@ -51,7 +51,7 @@ void common_hal_mcu_disable_interrupts() {
     nesting_count++;
 }
 
-void common_hal_mcu_enable_interrupts() {
+void common_hal_mcu_enable_interrupts(void) {
     if (nesting_count == 0) {
         // This is very very bad because it means there was mismatched disable/enables.
         reset_into_safe_mode(SAFE_MODE_INTERRUPT_ERROR);
